@@ -1,0 +1,735 @@
+button.menu-btn menu
+.menu-test
+    button.dark-btn dark
+    button.lng-btn en
+    button.auth-btn auth
+    button.btn-predict predict
+    button.btn-thenks thanks
+    button.btn-lastPred last predict
+    button.btn-after after 1 game
+.fav-page#goals-or-zeros
+    .promo.promoPos
+        .wrapp
+            //mob
+            .promo__title
+                picture.uk
+                    source(media="(max-width: 600px)" srcset="img/promo/titleText-mob.png")
+                    img(src="img/promo/titleText-tab.png" alt="text")
+                picture.en
+                    source(media="(max-width: 600px)" srcset="img/promo/titleText-mob-en.png")
+                    img(src="img/promo/titleText-tab-en.png" alt="text")
+            .promo__match
+                .promo__team
+                    .team.team1.animRight
+                        .team-man
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                        .team-text
+                            picture.uk
+                                source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                img(src="img/teams/text-bel-desk.png" alt="text")
+                            picture.en
+                                source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                img(src="img/teams/text-bel-desk-en.png" alt="text")
+                .promo__match-title
+                    picture.uk
+                        img(src="img/promo/titleText-desk.png" alt="text")
+                    picture.en
+                        img(src="img/promo/titleText-desk-en.png" alt="text")
+                .promo__match-circle
+                    picture
+                        source(media="(max-width: 600px)" srcset="img/predict/circle-mob.png")
+                        img(src="img/predict/circle-tab.png" alt="circle")
+                .promo__team
+                    .team.team2
+                        .team-man
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                        .team-text
+                            picture.uk
+                                source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                img(src="img/teams/text-ukr-desk.png" alt="text")
+                            picture.en
+                                source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                img(src="img/teams/text-ukr-desk-en.png" alt="text")
+            .promo__prize
+                p.promo__prize-title(data-translate="prizeFond") În perioada 25.04.2025 - 07.05.2025 fă predicții de scor corect și primul gol pentru meciurile participante în promoție și câștigă bonusuri și pariuri fără risc.
+                a(href="/login/" role="button" data-translate="loginBtn").promo__prize-btn.btn.unauth-msg.hide Autentificare
+                .promo__prize-btn.toPredict.took-part.hide.btn(role="button" data-translate="playBtn") Fă o predicție
+    .gide
+        .wrapp
+            .gide__title
+                picture.uk
+                    source(media="(max-width: 600px)" srcset="img/gide/gideTitle-mob.png")
+                    source(media="(max-width: 1050px)" srcset="img/gide/gideTitle-tab.png")
+                    img(src="img/gide/gideTitle-desk.png" alt="text")
+                picture.en
+                    source(media="(max-width: 600px)" srcset="img/gide/gideTitle-mob-en.png")
+                    source(media="(max-width: 1050px)" srcset="img/gide/gideTitle-tab-en.png")
+                    img(src="img/gide/gideTitle-desk-en.png" alt="text")
+            .gide__list
+                .gide__list-item
+                    .gide__list-card.card1.animCard
+                        .gide__list-bg
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/gide/gideCard1-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideCard1-tab.png")
+                                img(src="img/gide/gideCard1-desk.png" alt="card")
+                        .gide__list-txt
+                            picture.uk
+                                source(media="(max-width: 600px)" srcset="img/gide/gideTxt1-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideTxt1-tab.png")
+                                img(src="img/gide/gideTxt1-desk.png" alt="text")
+                            picture.en
+                                source(media="(max-width: 600px)" srcset="img/gide/gideTxt1-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideTxt1-tab-en.png")
+                                img(src="img/gide/gideTxt1-desk-en.png" alt="text")
+                    .gide__list-text(data-translate="gideText1") ALEGE SCORUL ȘI ECHIPA CARE VA MARCA PRIMUL GOL
+                    .gide__list-btn.btn(data-translate="MoreInfo") VEZI DETALII
+                .gide__list-item
+                    .gide__list-card.card.card2.animCard
+                        .gide__list-bg
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/gide/gideCard2-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideCard2-tab.png")
+                                img(src="img/gide/gideCard2-desk.png" alt="card")
+                        .gide__list-txt
+                            picture.uk
+                                source(media="(max-width: 600px)" srcset="img/gide/gideTxt2-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideTxt2-tab.png")
+                                img(src="img/gide/gideTxt2-desk.png" alt="text")
+                            picture.en
+                                source(media="(max-width: 600px)" srcset="img/gide/gideTxt2-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideTxt2-tab-en.png")
+                                img(src="img/gide/gideTxt2-desk-en.png" alt="text")
+                    .gide__list-text(data-translate="gideText2") Apasă butonul „Fă o predicție”
+                .gide__list-item
+                    .gide__list-card.card.card3.animCard
+                        .gide__list-bg
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/gide/gideCard3-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideCard3-tab.png")
+                                img(src="img/gide/gideCard3-desk.png" alt="card")
+                        .gide__list-txt
+                            picture.uk
+                                source(media="(max-width: 600px)" srcset="img/gide/gideTxt3-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideTxt3-tab.png")
+                                img(src="img/gide/gideTxt3-desk.png" alt="text")
+                            picture.en
+                                source(media="(max-width: 600px)" srcset="img/gide/gideTxt3-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/gide/gideTxt3-tab-en.png")
+                                img(src="img/gide/gideTxt3-desk-en.png" alt="text")
+                    .gide__list-text(data-translate="gideText3") Plasează un pariu
+    .predict.predictPos#predict
+        .wrapp
+            .predict__title
+                .predict__title-img
+                    picture.uk
+                        source(media="(max-width: 600px)" srcset="img/predict/predictTitle-mob.png")
+                        source(media="(max-width: 1050px)" srcset="img/predict/predictTitle-tab.png")
+                        img(src="img/predict/predictTitle-desk.png" alt="predict")
+                    picture.en
+                        source(media="(max-width: 600px)" srcset="img/predict/predictTitle-mob-en.png")
+                        source(media="(max-width: 1050px)" srcset="img/predict/predictTitle-tab-en.png")
+                        img(src="img/predict/predictTitle-desk-en.png" alt="predict")
+            .predict__tabs
+                .predict__tabs-txt(data-translate="predictChoose") Alege meciul
+                .predict__tabs-bottom
+                    .predict__tabs-dates
+                        .predict__tabs-date.date1.active(data-translate="tabsDate1" data-match-number="1") 20.03 12:00
+                        .predict__tabs-date.date2(data-translate="tabsDate2" data-match-number="2") 23.03 12:00
+                        .predict__tabs-date.date3(data-translate="tabsDate3" data-match-number="1") 23.03 12:00
+                        .predict__tabs-date.date4(data-translate="tabsDate4" data-match-number="1") 23.03 12:00
+                .predict__tabs-global
+                    .predict__tabs-score.active(data-translate="predictScore") Predicție pentru SCOR CORECT
+                    .predict__tabs-goal(data-translate="predictGoal") Predicție pentru primul gol
+            // score-1
+            .predict__container.score-1.active(data-match-number="1")
+                .predict__container-teams
+                    .predict__team
+                        .team.team1.scoreTeam.animRight
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr1-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr1-tab.png")
+                                    img(src="img/teams/man-ukr1-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-tab.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team1")
+                            .predict__team-decrease.team1-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team1-plus(role="button")
+                    .predict__circle
+                        picture
+                            source(media="(max-width: 600px)" srcset="img/predict/circle-mob.png")
+                            source(media="(max-width: 1050px)" srcset="img/predict/circle-tab.png")
+                            img(src="img/predict/circle-desk.png" alt="circle")
+                    .predict__team
+                        .team.team2.scoreTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel1-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel1-tab.png")
+                                    img(src="img/teams/man-bel1-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team2")
+                            .predict__team-decrease.team1-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team1-plus(role="button")
+            //score-2
+            .predict__container.score-2(data-match-number="2")
+                .predict__container-teams
+                    .predict__team
+                        .team.team1.scoreTeam.animRight
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                    img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team1")
+                            .predict__team-decrease.team1-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team1-plus(role="button")
+                    .predict__circle
+                        picture
+                            source(media="(max-width: 600px)" srcset="img/predict/circle-mob.png")
+                            source(media="(max-width: 1050px)" srcset="img/predict/circle-tab.png")
+                            img(src="img/predict/circle-desk.png" alt="circle")
+                    .predict__team
+                        .team.team2.scoreTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                    img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team2")
+                            .predict__team-decrease.team2-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team2-plus(role="button")
+            //score-3
+            .predict__container.score-3(data-match-number="3")
+                .predict__container-teams
+                    .predict__team
+                        .team.team1.scoreTeam.animRight
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                    img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team1")
+                            .predict__team-decrease.team1-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team1-plus(role="button")
+                    .predict__circle
+                        picture
+                            source(media="(max-width: 600px)" srcset="img/predict/circle-mob.png")
+                            source(media="(max-width: 1050px)" srcset="img/predict/circle-tab.png")
+                            img(src="img/predict/circle-desk.png" alt="circle")
+                    .predict__team
+                        .team.team2.scoreTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                    img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team2")
+                            .predict__team-decrease.team2-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team2-plus(role="button")
+            //score-4
+            .predict__container.score-4(data-match-number="4")
+                .predict__container-teams
+                    .predict__team
+                        .team.team1.scoreTeam.animRight
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                    img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team1")
+                            .predict__team-decrease.team1-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team1-plus(role="button")
+                    .predict__circle
+                        picture
+                            source(media="(max-width: 600px)" srcset="img/predict/circle-mob.png")
+                            source(media="(max-width: 1050px)" srcset="img/predict/circle-tab.png")
+                            img(src="img/predict/circle-desk.png" alt="circle")
+                    .predict__team
+                        .team.team2.scoreTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                    img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                        .predict__team-control(data-team="team2")
+                            .predict__team-decrease.team2-minus(role="button")
+                            .predict__team-number 0
+                            .predict__team-increase.team2-plus(role="button")
+            //goal-1
+            .predict__container.goal-1.goalCont(data-match-number="1")
+                .predict__container-wrap
+                    .predict__container-team
+                        .predict__team.team.team1.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr1-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr1-tab.png")
+                                    img(src="img/teams/man-ukr1-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                    .predict__zero
+                        .predict__zero-img
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/predict/zero-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/predict/zero-tab.png")
+                                img(src="img/predict/zero-desk.png", alt="zero")
+                    .predict__container-team
+                        .predict__team.team.team2.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel1-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel1-tab.png")
+                                    img(src="img/teams/man-bel1-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                .predict__container-calculations
+                    .predict__radio
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="ua", id="radio1")
+                            label(for="radio1")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="draw", id="radio2")
+                            label(for="radio2")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="be", id="radio3")
+                            label(for="radio3")
+                            span(data-translate="choose") Alege
+            //goal-2
+            .predict__container.goal-2.goalCont(data-match-number="2")
+                .predict__container-wrap
+                    .predict__container-team
+                        .predict__team.team.team2.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                    img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                    .predict__zero
+                        .predict__zero-img
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/predict/zero-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/predict/zero-tab.png")
+                                img(src="img/predict/zero-desk.png", alt="zero")
+                    .predict__container-team
+                        .predict__team.team.team1.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                    img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                .predict__container-calculations
+                    .predict__radio
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="be", id="radio4")
+                            label(for="radio4")
+                            span(data-translate="choose") Alege;
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="draw", id="radio5")
+                            label(for="radio5")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="ua", id="radio6")
+                            label(for="radio6")
+                            span(data-translate="choose") Alege
+            //goal-3
+            .predict__container.goal-3.goalCont(data-match-number="3")
+                .predict__container-wrap
+                    .predict__container-team
+                        .predict__team.team.team2.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                    img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                    .predict__zero
+                        .predict__zero-img
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/predict/zero-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/predict/zero-tab.png")
+                                img(src="img/predict/zero-desk.png", alt="zero")
+                    .predict__container-team
+                        .predict__team.team.team1.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                    img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                .predict__container-calculations
+                    .predict__radio
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="be", id="radio7")
+                            label(for="radio7")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="draw", id="radio8")
+                            label(for="radio8")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="ua", id="radio9")
+                            label(for="radio9")
+                            span(data-translate="choose") Alege
+            //goal-4
+            .predict__container.goal-4.goalCont(data-match-number="4")
+                .predict__container-wrap
+                    .predict__container-team
+                        .predict__team.team.team2.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-bel2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-bel2-tab.png")
+                                    img(src="img/teams/man-bel2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab.png")
+                                    img(src="img/teams/text-bel-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-bel-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-bel-tab-en.png")
+                                    img(src="img/teams/text-bel-desk-en.png" alt="text")
+                    .predict__zero
+                        .predict__zero-img
+                            picture
+                                source(media="(max-width: 600px)" srcset="img/predict/zero-mob.png")
+                                source(media="(max-width: 1050px)" srcset="img/predict/zero-tab.png")
+                                img(src="img/predict/zero-desk.png", alt="zero")
+                    .predict__container-team
+                        .predict__team.team.team1.goalTeam
+                            .team-man
+                                picture
+                                    source(media="(max-width: 600px)" srcset="img/teams/man-ukr2-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/man-ukr2-tab.png")
+                                    img(src="img/teams/man-ukr2-desk.png" alt="footballer")
+                            .team-text
+                                picture.uk
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab.png")
+                                    img(src="img/teams/text-ukr-desk.png" alt="text")
+                                picture.en
+                                    source(media="(max-width: 600px)" srcset="img/teams/text-ukr-mob-en.png")
+                                    source(media="(max-width: 1050px)" srcset="img/teams/text-ukr-tab-en.png")
+                                    img(src="img/teams/text-ukr-desk-en.png" alt="text")
+                .predict__container-calculations
+                    .predict__radio
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="be", id="radio10")
+                            label(for="radio10")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="draw", id="radio11")
+                            label(for="radio11")
+                            span(data-translate="choose") Alege
+                        .predict__radio-item
+                            input(type="radio", name="сhoice", value="ua", id="radio12")
+                            label(for="radio12")
+                            span(data-translate="choose") Alege
+            .predict__container-calculations.topForecast
+                .predict__info #[span(data-translate="popularPredict") Cele mai populare predicții]
+                .predict__forecasts
+                    .predict__forecasts-item #[span 20%] 0-2
+                    .predict__forecasts-item #[span 20%] 0-2
+                    .predict__forecasts-item #[span 20%] 0-2
+            a(href="/login/" role="button" data-translate="loginBtn").predict__btn.btn.unauth-msg.hide Autentificare
+            .predict__btn.btn.took-part.hide.predict-btn(role="button" data-translate="playBtn") Fă o predicție
+            .predict__last
+                .predict__last-title
+                    .predict__last-img
+                        img(src="img/predict/clock.svg" alt="clock")
+                    .predict__last-txt(data-translate="lastPredict") Ultima ta predicție
+                .predict__last-info
+                    .predict__last-score
+                        .predict__last-team.team1(data-translate="shakhtar") Шахтар
+                        .predict__last-counter
+                            span.scoreTeam1 0
+                            .predict__last-vs
+                                img(src="img/vs.png" alt="vs")
+                            span.scoreTeam2 0
+                        .predict__last-team.team2(data-translate="dynamo") Динамо
+                    .predict__last-goal.hide
+                        .predict__last-text(data-translate="firstGoal") Перший гол:
+                        .predict__last-country(data-translate="shakhtar") Шахтар
+                    .predict__last-result.confirmed(data-translate="confirmed") Confirmată
+                    .predict__last-result.unconfirmed.active(data-translate="unconfirmed") Neconfirmat
+    .table.tablePos
+        .wrapp
+            .table__title
+                picture.uk
+                    source(media="(max-width: 600px)" srcset="img/table/table-title-mob.png")
+                    source(media="(max-width: 1050px)" srcset="img/table/table-title-tab.png")
+                    img(src="img/table/table-title-desk.png" alt="Table")
+                picture.en
+                    source(media="(max-width: 600px)" srcset="img/table/table-title-mob-en.png")
+                    source(media="(max-width: 1050px)" srcset="img/table/table-title-tab-en.png")
+                    img(src="img/table/table-title-desk-en.png" alt="Table")
+            .table__wrap
+                .table__tabs
+                    .table__tabs-date.date1.active(data-translate="tabsDate1") 20.03 12:00
+                    .table__tabs-date.date2(data-translate="tabsDate2") 23.03 12:00
+                    .table__tabs-date.date3(data-translate="tabsDate3") 23.03 12:00
+                    .table__tabs-date.date4(data-translate="tabsDate4") 23.03 12:00
+                .table__head
+                    .table__head-item(data-translate="tableId") ID participant
+                    .table__head-item(data-translate="tablePredict") Predicția
+                    .table__head-item(data-translate="tableBonus") Bonus
+                //1
+                .table__body.table1.active
+                    .table__body-scroll#results-table
+                        .table__row
+                            .table__row-item 123456789
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 100300268
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row.you
+                            .table__row-item 0000067
+                            .table__row-you(data-translate="tableYou") You
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                        .table__row
+                            .table__row-item 0000067
+                            .table__row-item
+                                span **
+                                img(src="img/vs.png" alt="vs")
+                                span **
+                            .table__row-item 0000067
+                    .table__body-other#results-table-other
+    .drop
+        details.dropdown
+            summary(data-translate="rulesTitle") Regulamentul promoției „Favbet Prediction”
+            .drop-txt
+                .drop-txt-list(data-translate="rulesTxt")
+                    p #[span Login] to the promotional page by clicking the "Login" button or register as a user. Select the exact match score and the team that will score first during the Promotion period.
+                    p #[span After entering] the exact full-time match score and selecting the team, click the "Make a Prediction" button. Only the last prediction submitted by the Participant before the specified time of each individual match will be considered in the Promotion.
+                    p #[span Place bets from 200 ₴] on matches, for each individual match in the Promotion. Only settled single bets ("Single") with a minimum odds of 2.0 are considered.
+                    p #[span Bets from the Bonus Account], bets marked as "Cash out", "Bet return", bets with the applied "Bet insurance"bonus, as well as bets from the "Cybersport (Pinnacle)" and "Fantasy Football" sections, are not considered.
+    .popups._opacity
+        .popups__item.gidePopup
+            .popups__item-close
+            .popups__item-body
+                .popups__item-txt(data-translate="prizeDatails")
+                    p Autentifică-te în contul tău Favbet sau Înregistrează-te. Apoi, fă o predicție indicând scorul corect și/sau echipa care va înscrie primul gol în timpul regulamentar. Confirmă predicția apăsând butonul „Confirmă predicția” și valideaz-o prin plasarea unui bilet corespunzător.
+                    p Pentru a confirma predicțiile, plasează un bilet de minimum 20 lei pentru Scor Corect și/sau minimum 100 lei pentru echipa care va înscrie primul gol. Se iau în considerare doar biletele câștigătoare de tip Simplu Pre-meci, cu o cotă minimă de 1.70. Nu sunt luate în considerare biletele de joc care, din diverse motive, primesc cotă 1.00, biletele care au utilizat opțiunea Cash Out, biletele utilizate ca Pariu Fără Risc obținute în urma altor promoții/campanii, cât și biletele de Tip Multiplu sau Sistem.
+        .popups__item._confirmPopup
+            .popups__item-close.closeConf
+            .popups__item-info
+                .popups__item-top
+                    picture
+                        source(media="(max-width: 600px)" srcset="img/popups/popup-check-mob.png")
+                        img(src="img/popups/popup-check-desk.png" alt="card")
+                .popups__item-tnx
+                    .popups__item-tnx-img
+                        picture.uk
+                            source(media="(max-width: 600px)" srcset="img/popups/popup-thanks-mob.png")
+                            img(src="img/popups/popup-thanks-desk.png" alt="card")
+                        picture.en
+                            source(media="(max-width: 600px)" srcset="img/popups/popup-thanks-mob-en.png")
+                            img(src="img/popups/popup-thanks-desk-en.png" alt="card")
+                .popups__item-center(data-translate="popupPredict") Predicția ta este #[span acceptată.]
+                .popups__item-btn.btn(data-translate="continue") Continua
