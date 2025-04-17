@@ -228,44 +228,19 @@ picture
       @media screen and (max-width: 335px)
         width: 205px
   .popups
-    &__item-tnx
-      &:before
-        left: -52%
-      &-img
-        .en
-          width: 375px
-    @media screen and (max-width: 1050px)
-    &__item
-      &-info
-        width: 712px
-    @media screen and (max-width: 750px)
-    &__item
-      &-info
-        width: 600px
-    @media screen and (max-width: 615px)
       &__item
-        &-info
-          width: 425px
         &-tnx
+          &:before
+            left: -52%
           &-img
-            .en
+            width: 375px
+            @media screen and (max-width: 615px)
               width: 295px
-    @media screen and (max-width: 460px)
-      &__item
-        &-info
-          width: 300px
         &-center
-          font-size: 21px
-    @media screen and (max-width: 340px)
-      &__item
+          @media screen and (max-width: 615px)
+            font-size: 24px
         &-info
-          width: 250px
-        &-tnx
-          &-img
-            .en
-              width: 270px
-        &-center
-          font-size: 18px
+          max-width: 285px
   .drop
     .dropdown
       summary
