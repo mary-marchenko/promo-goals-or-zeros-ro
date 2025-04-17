@@ -93,7 +93,7 @@ body.dark
         bottom: -438px
   .predict
     &:before
-      background: linear-gradient(0deg, rgba(18, 19, 29, 0) 0%, #12131d 92%)
+      background: linear-gradient(0deg, rgba(18, 19, 29, 0) 0%, #12131d 50%)
       @media screen and (max-width: 600px)
         top: -2px
     &:after
@@ -139,14 +139,14 @@ body.dark
 
 //EN styles
 picture
-  &.uk
+  &.ro
     display: block
   &.en
     display: none
 
 .fav-page.en
   picture
-    &.uk
+    &.ro
       display: none
     &.en
       display: block
@@ -173,20 +173,20 @@ picture
       @media screen and (max-width: 1050px)
         width: 593px
       @media screen and (max-width: 600px)
-        width: 355px
+        width: 352px
       @media screen and (max-width: 370px)
         width: 290px
       @media screen and (max-width: 300px)
         width: 275px
   .gide
     &__title
-      width: 471px
-      @media screen and (max-width: 1050px)
-        width: 359px
+      width: 573px
       @media screen and (max-width: 600px)
-        width: 317px
-      @media screen and (max-width: 335px)
-        width: 254px
+        width: 350px
+      @media screen and (max-width: 370px)
+        width: 300px
+      @media screen and (max-width: 315px)
+        width: 275px
       &:after
         @media screen and (max-width: 600px)
           left: 295px
@@ -194,19 +194,28 @@ picture
           left: 287px
         @media screen and (max-width: 335px)
           left: 256px
+    &__list
+      &-btn
+        @media screen and (max-width: 600px)
+          bottom: 13px
   .predict
     &__title
-      @media screen and (max-width: 1050px)
-        width: 454px
+      width: 530px
       @media screen and (max-width: 600px)
         width: 319px
-      @media screen and (max-width: 335px)
-        width: 255px
+      @media screen and (max-width: 370px)
+        width: 290px
+      @media screen and (max-width: 315px)
+        width: 270px
     &__tabs
+      &-goal
+        padding-right: 87px
       @media screen and (max-width: 600px)
         &-goal,
         &-score
           font-size: 9.7px
+        &-goal
+          padding-right: 22px
         &-score
           padding-left: 20px
   .table
@@ -257,6 +266,13 @@ picture
               width: 270px
         &-center
           font-size: 18px
+  .drop
+    .dropdown
+      summary
+        @media screen and (max-width: 715px)
+          font-size: 12.5px
+        @media screen and (max-width: 600px)
+          font-size: 12px
 //end EN
 
 body
@@ -362,7 +378,7 @@ body
     @media screen and (max-width: 1050px)
       background: url("../img/promo/bg-1-tab.jpg") no-repeat 50% 50%/cover
     @media screen and (max-width: 600px)
-      background: url("../img/promo/bg-1-mob.jpg") no-repeat 50% -205px/cover
+      background: url("../img/promo/bg-1-mob.jpg") no-repeat 50% 100%/cover
     &:after
       content: ""
       position: absolute
@@ -579,9 +595,11 @@ body
   &__tabs
     display: flex
   &__radio
+    width: 1021px
+    display: flex
+    justify-content: space-between
     position: relative
     z-index: 5
-    display: flex
     margin-bottom: 10px
     input[type="radio"]
       display: none
@@ -614,7 +632,6 @@ body
             background: url("../img/predict/radiobutton-active.png") no-repeat 100% 100%/cover
 
       &:nth-child(2)
-        margin: 0 21px 0 8px
       span
         margin-top: 8px
         font-family: $font-montserrat-bold
@@ -635,7 +652,7 @@ body
         display: none
       .predict__team-decrease, .predict__team-increase
         display: none
-      .preditct
+      .predict
         &__team
           &-control
             pointer-events: none
@@ -647,14 +664,32 @@ body
           display: none
         &:nth-child(1), &:nth-child(2)
           opacity: 0
+        &:nth-child(3)
+          input[type="radio"]
+            &:not(:checked) + label
+              background: url("../img/predict/radiobutton-active.png") no-repeat 50% 50% / cover
+          label
+            @media screen and (min-width: 601px)
+              height: 34px
+            @media screen and (max-width: 600px)
+              height: 29px
     &.goal-2._lock
       .predict__radio-item
         display: flex
         pointer-events: none
         span
           display: none
-        &:nth-child(2), &:nth-child(3)
+        &:nth-child(1), &:nth-child(2)
           opacity: 0
+        &:nth-child(3)
+          input[type="radio"]
+            &:not(:checked) + label
+              background: url("../img/predict/radiobutton-active.png") no-repeat 50% 50% / cover
+          label
+            @media screen and (min-width: 601px)
+              height: 34px
+            @media screen and (max-width: 600px)
+              height: 29px
     &.goalCont
       margin-top: -27px
       .predict
@@ -703,22 +738,28 @@ body
       letter-spacing: 0.32px
       font-size: 16px
       text-transform: uppercase
-      background: url('../img/predict/tabsScore-desk.png') no-repeat 100% 100%/cover
+      background: url('../img/tabsDateL-desk.png') no-repeat 100% 100%/cover
       background-size: 100% 100%
       @media screen and (max-width: 600px)
-        background: url('../img/predict/tabsScore-mob.png') no-repeat 100% 100%/cover
+        background: url('../img/tabsScore-mob.png') no-repeat 100% 100%/cover
         background-size: 100% 100%
       &:hover
         background: url('../img/predict/tabsScore-hover-desk.png') no-repeat 100% 100%/cover
         background-size: 100% 100%
+        @media screen and (max-width: 600px)
+          background: url('../img/tabsScore-active-mob.png') no-repeat 0% 100%/cover
+          background-size: 100% 100%
       &.active
-        background: url('../img/predict/tabsScore-active-desk.png') no-repeat 100% 100%/cover
+        background: url('../img/tabsDateL-active-desk.png') no-repeat 100% 100%/cover
         background-size: 100% 100%
-      &.disabled
-        background: url('../img/predict/tabsScore-disable-desk.png') no-repeat 100% 100%/cover
-        background-size: 100% 100%
-        pointer-events: none
-        color: $grey
+        @media screen and (max-width: 600px)
+          background: url('../img/tabsScore-active-mob.png') no-repeat 0% 100%/cover
+          background-size: 100% 100%
+      //&.disabled
+      //  background: url('../img/predict/tabsScore-disable-desk.png') no-repeat 100% 100%/cover
+      //  background-size: 100% 100%
+      //  pointer-events: none
+      //  color: $grey
     &-goal
       cursor: pointer
       transition: .4s ease-in-out
@@ -729,22 +770,28 @@ body
       font-family: $font-montserrat-bold
       letter-spacing: 0.32px
       text-transform: uppercase
-      background: url('../img/predict/tabsGoal-desk.png') no-repeat 0% 50%/cover
+      background: url('../img/tabsDateR-desk.png') no-repeat 0% 50%/cover
       background-size: 100% 100%
       @media screen and (max-width: 600px)
-        background: url('../img/predict/tabsGoal-mob.png') no-repeat 0% 50%/cover
+        background: url('../img/tabsGoal-mob.png') no-repeat 0% 50%/cover
         background-size: 100% 100%
       &:hover
         background: url('../img/predict/tabsGoal-hover-desk.png') no-repeat 0% 100%/cover
         background-size: 100% 100%
+        @media screen and (max-width: 600px)
+          background: url('../img/tabsGoal-active-mob.png') no-repeat 0% 100%/cover
+          background-size: 100% 100%
       &.active
-        background: url('../img/predict/tabsGoal-active-desk.png') no-repeat 0% 50%/cover
+        background: url('../img/tabsDateR-active-desk.png') no-repeat 0% 50%/cover
         background-size: 100% 100%
-      &.disabled
-        background: url('../img/predict/tabsGoal-disable-desk.png') no-repeat 100% 100%/cover
-        pointer-events: none
-        color: $grey
-        background-size: 100% 100%
+        @media screen and (max-width: 600px)
+          background: url('../img/tabsGoal-active-mob.png') no-repeat 0% 100%/cover
+          background-size: 100% 100%
+      //&.disabled
+      //  background: url('../img/predict/tabsGoal-disable-desk.png') no-repeat 100% 100%/cover
+      //  pointer-events: none
+      //  color: $grey
+      //  background-size: 100% 100%
     &-bottom
       display: flex
       flex-direction: column
@@ -788,9 +835,15 @@ body
           background-size: 100% 100%
         &:hover
           background: url('../img/tabsDateL-active-desk.png') no-repeat 0% 100%/cover
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateL-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
         &.active
           background: url('../img/tabsDateL-active-desk.png') no-repeat 0% 50%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateL-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
       &:nth-child(2),
         &:nth-child(3)
           padding: 13px 28px 13px 27px
@@ -799,9 +852,15 @@ body
           &:hover
             background: url('../img/tabsScore-center-active.png') no-repeat 100% 100%/cover
             background-size: 100% 100%
+            @media screen and (max-width: 600px)
+              background: url('../img/tabsScore-center-mob-active.png') no-repeat 0% 50%/cover
+              background-size: 100% 100%
           &.active
             background: url('../img/tabsScore-center-active.png') no-repeat 100% 50%/cover
             background-size: 100% 100%
+            @media screen and (max-width: 600px)
+              background: url('../img/tabsScore-center-mob-active.png') no-repeat 0% 50%/cover
+              background-size: 100% 100%
           @media screen and (max-width: 600px)
             background: url('../img/tabsScore-center-mob.png') no-repeat 0% 50%/cover
             background-size: 100% 100%
@@ -815,9 +874,15 @@ body
         &:hover
           background: url('../img/tabsDateR-active-desk.png') no-repeat 100% 100%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateR-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
         &.active
           background: url('../img/tabsDateR-active-desk.png') no-repeat 100% 50%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateR-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
   &__team
     display: flex
     flex-direction: column
@@ -852,8 +917,7 @@ body
       font-family: $font-oswald-Bold
       font-size: 60px
       min-width: 60px
-      display: flex
-      justify-content: center
+      text-align: center
       text-transform: uppercase
       letter-spacing: 1.2px
       background: linear-gradient(170deg, #FFF 27.18%, #8DC5FF 42.8%, #FFF 59.36%, #8DC5FF 78.93%)
@@ -1127,11 +1191,17 @@ body
           background: url('../img/tabsDateL-mob.png') no-repeat 0% 50%/cover
           background-size: 100% 100%
         &:hover
-          background: url('../img/predict/tabsScore-hover-desk.png') no-repeat 0% 50%/cover
+          background: url('../img/tabsDateL-active-desk.png') no-repeat 0% 50%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateL-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
         &.active
           background: url('../img/tabsDateL-active-desk.png') no-repeat 0% 50%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateL-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
       &:nth-child(2),
         &:nth-child(3)
           padding: 13px 35px 13px 30px
@@ -1140,9 +1210,15 @@ body
           &:hover
             background: url('../img/tabsScore-center-active.png') no-repeat 100% 100%/cover
             background-size: 100% 100%
+            @media screen and (max-width: 600px)
+              background: url('../img/tabsScore-center-mob-active.png') no-repeat 0% 50%/cover
+              background-size: 100% 100%
           &.active
             background: url('../img/tabsScore-center-active.png') no-repeat 100% 50%/cover
             background-size: 100% 100%
+            @media screen and (max-width: 600px)
+              background: url('../img/tabsScore-center-mob-active.png') no-repeat 0% 50%/cover
+              background-size: 100% 100%
           @media screen and (max-width: 600px)
             background: url('../img/tabsScore-center-mob.png') no-repeat 0% 50%/cover
             background-size: 100% 100%
@@ -1152,11 +1228,17 @@ body
         @media screen and (max-width: 600px)
           background: url('../img/tabsDateR-mob.png') no-repeat 100% 50%/cover
         &:hover
-          background: url('../img/predict/tabsGoal-hover-desk.png') no-repeat 100% 100%/cover
+          background: url('../img/tabsDateR-active-desk.png') no-repeat 100% 100%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateR-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
         &.active
           background: url('../img/tabsDateR-active-desk.png') no-repeat 100% 50%/cover
           background-size: 100% 100%
+          @media screen and (max-width: 600px)
+            background: url('../img/tabsDateR-active-mob.png') no-repeat 0% 100%/cover
+            background-size: 100% 100%
   &__head
     width: 100%
     display: flex
@@ -1294,7 +1376,7 @@ body
         margin-bottom: 14px
 .drop
   max-width: 640px
-  margin: auto
+  margin: 0 auto 20px
   width: 100%
   padding: 10px 0
   z-index: 10
@@ -1444,7 +1526,7 @@ body
       background: url('../img/popups/bg-popup-desk.jpg') no-repeat 50% 50%/contain
       @media screen and (max-width: 700px)
         background: url('../img/popups/bg-popup-mob.jpg') no-repeat 50% 50%/contain
-      padding: 40px 50px
+      padding: 100px 50px
       width: 640px
     &-txt
       p
@@ -1455,7 +1537,7 @@ body
           margin-bottom: 18px
         span
           font-family: $font-montserrat-semiBold
-          color: $magenta
+          //color: $magenta
           text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25)
     &-info
       width: 768px
@@ -1470,15 +1552,13 @@ body
       &-img
         position: relative
         z-index: 3
-        width: 100%
-        .uk
-          width: 221px
+        width: 366px
       &::before
         z-index: 1
         content: ""
         position: absolute
         top: 37px
-        left: -119%
+        left: -54%
         width: 760px
         height: 93px
         background: url('../img/predict/redlines.png') no-repeat 50% 50%/cover
@@ -1502,12 +1582,12 @@ body
       text-transform: uppercase
       z-index: 3
     &-close
-      right: 15px
-      top: -36px
+      right: 0
+      top: -22px
       width: 34px
       min-height: 34px
       background: url("../img/close.svg") no-repeat 50% 50%/contain
-      margin-bottom: 5px
+      margin-bottom: 0
       cursor: pointer
       position: absolute
       &:hover

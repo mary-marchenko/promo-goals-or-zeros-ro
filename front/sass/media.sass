@@ -15,19 +15,21 @@
   .team
     width: 336px
     height: 443px
-    &.scoreTeam
-      width: 280px
-      height: 368px
+    //&.scoreTeam
+    //  width: 280px
+    //  height: 368px
   .promo
+    .wrapp
+      padding-bottom: 40px
     &.promoPos
-      margin-bottom: 92px
+      margin-bottom: 30px
     &__match
       &-title
         width: 308px
     &__prize
       margin-top: -210px
       &-title
-        font-size: 22px
+        width: 380px
       &-money
         width: 367px
       &-bonusTxt
@@ -37,7 +39,7 @@
       &-conditions
         font-size: 16px
   .gide
-    padding-bottom: 50px
+    padding-bottom: 30px
     &__list
       &-card
         width: 300px
@@ -61,8 +63,6 @@
       //height: 881px
       background-size: auto 880px
       background-position: 50% 0
-    &__circle
-      width: 225px
     &__team
       &-control
         width: 320px
@@ -71,8 +71,13 @@
       &-number
         margin: 0 20px
     &__container
+      margin-top: -18px
+      &.goalCont
+        margin-top: -18px
       &-calculations
         margin-top: -80px
+    &__radio
+      width: 931px
   .table
     margin-top: 90px
 
@@ -81,6 +86,8 @@
     width: 284px
     height: 375px
   .promo
+    &.promoPos
+      margin-bottom: 0
     &__title
       display: block
       width: 518px
@@ -95,6 +102,8 @@
         max-width: 250px
     &__prize
       margin-top: 0
+      &-title
+        width: 707px
     &__team
       &:nth-child(1)
         margin-right: -50px
@@ -144,8 +153,29 @@
       background: linear-gradient(180deg, rgba(0, 0, 85, 0) 0%, #005 95%)
     .wrapp
       background-size: auto 1197px
+    &__tabs
+      &-bottom
+        margin-bottom: 15px
+      &-txt
+        &:after
+          top: 97px
+      &-score
+        padding: 16px 26px 16px 30px
+      &-goal
+        padding: 16px 30px 16px 26px
+      &-date
+        &:first-child
+          padding: 13px 24px 13px 47px
+        &:nth-child(2),
+          &:nth-child(3)
+            padding: 13px 24px 13px 27px
+        &:last-child
+          padding: 13px 47px 13px 24px
+
     &__container
       margin-top: 0
+      &.goalCont
+        margin-top: 0
       &-calculations
         margin-top: 0
       &-top
@@ -155,24 +185,28 @@
       &:after
         background: none
     &.predictPos
-      margin-top: 0
+      margin-top: 40px
     &:before
       height: 105px
     &__title
       width: 410px
     &__circle
       width: 252px
+    &__zero
+      width: 252px
+      margin: 4px -58px
     &__team
       &:nth-child(1)
         margin-right: -110px
       &:nth-child(3)
         margin-left: -110px
       &.goalTeam.team1
-        margin-right: -30px
+        margin-right: 0
       &.goalTeam.team2
-        margin-left: -15px
+        margin-left: 0
         margin-right: 0
     &__radio
+      width: 642px
       margin-bottom: 30px
       &-item
         &:nth-child(2)
@@ -203,13 +237,16 @@
   .team
     width: 227px
     height: 300px
-    &.scoreTeam
-      width: 224px
-      height: 295px
-    &.goalTeam
-      width: 216px
-      height: 276px
+    //&.scoreTeam
+    //  width: 224px
+    //  height: 295px
+    //&.goalTeam
+    //  width: 216px
+    //  height: 276px
   .promo
+    .wrapp
+      margin-bottom: 0
+      padding-bottom: 20px
     &__match
       &-circle
         max-width: 180px
@@ -218,8 +255,10 @@
     &__prize
       &-conditions
         max-width: 90%
+      &-title
+        width: 90%
     &.promoPos
-      margin-bottom: 50px
+      margin-bottom: 0
   .gide
     &__list
       &-card
@@ -250,11 +289,12 @@
         width: 62px
         height: 40px
     &__circle
-      width: 202px
+      width: 180px
     &__zero
-      width: 226px
-      margin: 0 30px
+      width: 180px
+      margin: 0 -30px
     &__radio
+      width: 515px
       &-item
         width: 214px
         &:nth-child(2)
@@ -262,26 +302,64 @@
     .wrapp
       background-size: auto 960px
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 740px)
+  .predict
+    &__tabs
+      &-bottom
+        transform: scale(0.9)
+        margin-bottom: 5px
+      &-global
+        transform: scale(0.9)
+      &-txt
+        &:after
+          top: 90px
+          height: 46px
+  .table
+    &__wrap
+      transform: scale(0.95)
+
+
+@media screen and (max-width: 715px)
   .team
     width: 182px
     height: 240px
-    &.scoreTeam
-      width: 180px
-      height: 236px
-    &.goalTeam
-      width: 173px
-      height: 220px
+    //&.scoreTeam
+    //  width: 180px
+    //  height: 236px
+    //&.goalTeam
+    //  width: 173px
+    //  height: 220px
   .predict
     &__radio
+      width: 468px
       &-item
         &:nth-child(2)
           margin: 0 -13px 0 -13px
+    &__circle
+      margin: -37px 13px 0
     .wrapp
       background-size: auto 900px
+    &.predictPos
+      margin-top: 20px
+    &__tabs
+      &-date
+        font-size: 12px
+      &-score
+        font-size: 12px
+        padding: 16px 15px 16px 30px
+        white-space: nowrap
+      &-goal
+        font-size: 12px
+        padding: 16px 30px 16px 16px
+        white-space: nowrap
+      &-txt
+        &:after
+          top: 83px
+          height: 43px
   .table
     &__title
-      margin-bottom: 0
+      margin-bottom: -35px
+      margin-top: 30px
     &__wrap
       transform: scale(0.85)
       transform-origin: center
@@ -294,14 +372,17 @@
     .dropdown
       .drop-txt
         width: 100%
+      summary
+        font-size: 14px
   .details
     width: 540px
   .popups
     &__item
       &-close
-        right: 0
+        right: 4px
+        top: -34px
       &-body
-        width: 342px
+        width: 302px
         padding: 28px 20px 18px 20px
       &-txt
         p
@@ -343,14 +424,14 @@
   .team
     width: 148px
     height: 195px
-    &.scoreTeam
-      width: 160px
-      height: 210px
-    &.goalTeam
-      width: 140px
-      height: 172px
-      &.team1
-        margin-right: -15px
+    //&.scoreTeam
+    //  width: 160px
+    //  height: 210px
+    //&.goalTeam
+    //  width: 140px
+    //  height: 172px
+    //  &.team1
+    //    margin-right: -15px
     &-text
       width: 42%
     &-man
@@ -359,9 +440,10 @@
   .promo
     background-size: 0
     .wrapp
+      padding-bottom: 0
       &:after
         height: 120px
-        bottom: 266px
+        bottom: -2px
         background: linear-gradient(180deg, rgba(0, 0, 85, 0.00) 0%, #005 100%)
     &__title
       width: 324px
@@ -374,7 +456,9 @@
         margin: 0 26px
     &__prize
       &-title
-        font-size: 16px
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 20px
         span
           margin-right: 4px
       &-money
@@ -459,54 +543,71 @@
         left: 158px
         font-size: 12px
   .predict
+    &.predictPos
+      margin-top: 0
     .wrapp
       background-size: auto 690px
     &__title
       width: 312px
       margin-top: 35px
-      margin-bottom: 16px
+      margin-bottom: 0
     &__tabs
+      &-bottom
+        transform: scale(1)
+        margin-bottom: 10px
+      &-dates
+        transform: scale(1)
       &-score
         font-size: 11px
         line-height: 15px
         letter-spacing: 0.22px
-        padding: 4px 21px 4px 0
+        padding: 4px 10px 2px 0
         text-align: right
         width: 142px
+        white-space: normal
       &-goal
         font-size: 11px
         line-height: 15px
         letter-spacing: 0.22px
-        padding: 4px 0 4px 21px
+        padding: 4px 0 2px 10px
         width: 142px
+        white-space: normal
       &-date
-        width: 132px
+        //width: 132px
         font-size: 14px
         text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25)
         line-height: 15px
         letter-spacing: 0.28px
+        height: 38px
         &:first-child
-          padding: 11px 20px 11px 0
+          width: 80px
+          padding: 5px 17px 0px 23px
           text-align: right
+        &:nth-child(2),
+          &:nth-child(3)
+            width: 66px
+            padding: 5px 13px 0
         &:last-child
-          padding: 11px 0 11px 21px
+          width: 80px
+          padding: 5px 23px 0px 17px
           text-align: left
       &-txt
-        &:after
-          display: none
         font-size: 12px
         letter-spacing: 0.12px
         text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25)
-        margin: 11px 0 9px
+        margin: 0 0 5px
+        &:after
+          display: none
     &__circle
-      width: 122px
-      margin: 0 10px
+      width: 104px
+      margin: -22px 20px 0
     &__team
       &:nth-child(1)
         margin-right: -58px
       &:nth-child(3)
         margin-left: -58px
       &-control
+        margin-top: -22px
         width: 178px
         height: 52px
         background-size: 100% 100%
@@ -579,16 +680,17 @@
         font-size: 14px
     &__container
       &.goalCont
-        margin-top: 25px
         .predict__container-calculations
           margin-top: -6px
       &-top
         font-size: 12px
         width: 280px
     &__zero
-      width: 156px
-      margin: 0 -40px 0 -30px
+      width: 104px
+      margin: 0 -22px
     &__radio
+      width: 326px
+      margin-top: -10px
       &-item
         width: 130px
         height: 62px
@@ -604,7 +706,7 @@
   .table
     background-size: 0
     &:after
-      bottom: 180px
+      bottom: -5px
       background: linear-gradient(180deg, rgba(0, 0, 85, 0) 0%, #005 67%)
     .wrapp
       width: 100%
@@ -628,26 +730,33 @@
       width: 343px
       transform: scale(1)
       transform-origin: center
-      margin-bottom: 30px
+      margin-bottom: 20px
     &__tabs
       &-date
         width: 132px
         text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25)
         line-height: 15px
         letter-spacing: 0.28px
+        white-space: normal
+        font-size: 14px
         &:first-child
-          font-size: 14px
-          padding: 11px 20px 11px 0
+          width: 80px
+          padding: 3px 17px 3px 23px
           text-align: right
+        &:nth-child(2),
+        &:nth-child(3)
+          width: 66px
+          padding: 3px 13px
         &:last-child
-          font-size: 14px
-          padding: 11px 0 11px 21px
+          width: 80px
+          padding: 3px 23px 3px 17px
           text-align: left
       &-row
         &:nth-child(even)
           background: rgba(0, 0, 85, 0.50)
     &__head
       height: 30px
+      justify-content: space-between
       &-item
         font-size: 8px
         text-shadow: 0px 1.227px 0px rgba(0, 0, 0, 0.25)
@@ -659,14 +768,14 @@
           justify-content: center
         &:nth-child(2)
           width: 67px
-          padding-right: 11px
-          padding-left: 0
-          justify-content: center
-        &:nth-child(3)
-          width: 82px
           padding-right: 0
           padding-left: 0
           justify-content: center
+        &:nth-child(3)
+          width: 88px
+          padding-right: 0
+          padding-left: 14px
+          justify-content: flex-start
         &:nth-child(4)
           width: 88px
           padding-right: 0
@@ -674,8 +783,8 @@
           justify-content: center
     &__body
       &-scroll
-        min-height: 365px
-        max-height: 365px
+        min-height: 399px
+        max-height: 399px
         &::-webkit-scrollbar-thumb
           width: 2px
           background: $green
@@ -705,38 +814,41 @@
           height: 36px
           width: 82px
           padding-left: 12px
-          padding-right: 11px
+          padding-right: 0
         &:nth-child(2)
-          width: 67px
-          padding-right: 11px
+          width: 149px
+          padding-right: 0
           span
             min-width: 10px
             text-align: center
         &:nth-child(3)
           width: 82px
-          padding-right: 11px
-        &:nth-child(4)
-          width: 88px
-          padding-right: 11px
+          padding-right: 0
+          padding-left: 14px
       &.you
+        overflow-x: hidden
         width: 99%
         border: 1px solid $magenta
+        justify-content: space-between
         .table__row-item
           &:first-child
             width: 80px
             min-width: 80px
             padding-left: 12px
-            padding-right: 11px
+            padding-right: 0
           &:nth-child(3)
-            width: 66px
-            padding-right: 10px
+            min-width: 150px
+            padding-right: 0
+            padding-left: 0
+            justify-content: center
             span
               min-width: 10px
               text-align: center
           &:nth-child(4)
-            width: 81px
-            min-width: 81px
-            padding-right: 11px
+            width: 82px
+            min-width: 88px
+            padding-left: 14px
+            justify-content: flex-start
     &__bottom
       width: 343px
       padding-top: 0
@@ -790,7 +902,7 @@
 @media screen and (max-width: 360px)
   .promo
     &.promoPos
-      margin-bottom: 40px
+      margin-bottom: 10px
     &__title
       width: 250px
     &__match
@@ -818,7 +930,7 @@
     &:after
       background: linear-gradient(180deg, rgba(0, 0, 85, 0) 0%, #005 55%)
       height: 80px
-      bottom: 106px
+      bottom: 47px
     &.predictPos
       margin-top: -80px
     &__title
@@ -853,11 +965,11 @@
     z-index: 3
     &:after
       height: 120px
-      bottom: 220px
+      bottom: 0
     .wrapp
       background-size: 100% 470px
     &.tablePos
-      margin-top: -95px
+      margin-top: -7px
     &__wrap
       transform: scale(0.8)
       transform-origin: top center
@@ -882,14 +994,14 @@
   .popups
     &__item
       &-body
-        width: 278px
+        width: 260px
       &-txt
         p
           font-size: 10px
           line-height: 13px
           margin-bottom: 14px
       &-close
-        top: -15px
+        top: -36px
         &.closeConf
           right: 63px
 
@@ -901,6 +1013,9 @@
     min-width: 140px
   .promo
     &__prize
+      &-title
+        font-size: 12px
+        line-height: 16px
       &-btn
         padding: 10px
 

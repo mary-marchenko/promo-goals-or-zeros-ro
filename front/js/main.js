@@ -1,5 +1,5 @@
 (function () {
-    const apiURL = 'https://fav-prom.com/api_predictor_football_ro2',
+    const apiURL = 'https://fav-prom.com/api_predictor_football_ro',
         unauthMsgs = document.querySelectorAll('.unauth-msg'),
         youAreInBtns = document.querySelectorAll('.took-part'),
         mainPage = document.querySelector(".fav-page"),
@@ -14,10 +14,10 @@
     let matchNumber = Number(document.querySelector(".predict__container.active").getAttribute("data-match-number"))
     let showTopForecast = false
 
-    const FIRST_MATCH_DATE = new Date('2025-04-20T21:15:00') // дата матчу - 30хв
-    const SECOND_MATCH_DATE = new Date('2025-04-23T21:15:00')
-    const THIRD_MATCH_DATE = new Date('2025-04-23T21:15:00')
-    const FOURTH_MATCH_DATE = new Date('2025-04-23T21:15:00')
+    const FIRST_MATCH_DATE = new Date('2025-04-29T22:00:00') // дата матчу
+    const SECOND_MATCH_DATE = new Date('2025-04-30T22:00:00') // дата матчу
+    const THIRD_MATCH_DATE = new Date('2025-05-06T22:00:00') // дата матчу
+    const FOURTH_MATCH_DATE = new Date('2025-05-07T22:00:00') // дата матчу
     const currentDate = new Date()
 
     function lockMatchContainer(matchDate, matchNumber) {
@@ -81,10 +81,10 @@
     let translateState = true
     let debug = false
 
-    let locale = sessionStorage.getItem("locale") ?? "uk"
+    let locale = sessionStorage.getItem("locale") ?? "ro"
     // let locale = "uk"
 
-    const ukLeng = document.querySelector('#ukLeng');
+    const roLeng = document.querySelector('#roLeng');
     const enLeng = document.querySelector('#enLeng');
 
 
@@ -95,7 +95,7 @@
 
     let currentBet;
 
-    if (ukLeng) locale = 'uk';
+    if (roLeng) locale = 'ro';
     if (enLeng) locale = 'en';
 
     const request = function (link, extraOptions) {
@@ -312,6 +312,7 @@
         return fetch(`${apiURL}/new-translates/${locale}`).then(res => res.json())
             .then(json => {
                 i18nData = json;
+                console.log(i18nData);
                 translate();
                 var mutationObserver = new MutationObserver(function (mutations) {
                     translate();
@@ -404,25 +405,26 @@
     function updateTopForecasts(matchNumber) {
         request(`/users/${matchNumber}`).then(data => {
             // console.log(data.topForecasts); // Перевірка отриманих даних
-            if(showTopForecast){
-                const forecastsContainer = document.querySelector('.predict__forecasts');
-                forecastsContainer.innerHTML = '';
-                data.topForecasts.forEach(forecast => {
-                    const forecastItem = document.createElement('div');
-                    forecastItem.classList.add('predict__forecasts-item');
 
-                    const percentage = parseFloat(forecast.percentage).toFixed(1);
-                    const percentageSpan = document.createElement('span');
-                    percentageSpan.textContent = `${percentage}%`;
+            const forecastsContainer = document.querySelector('.predict__forecasts');
+            forecastsContainer.innerHTML = '';
 
 
-                    const forecastText = document.createTextNode(` ${forecast.forecast ?? "0-0"}`);
-                    forecastItem.appendChild(percentageSpan);
-                    forecastItem.appendChild(forecastText);
+            data.topForecasts.forEach(forecast => {
+                const forecastItem = document.createElement('div');
+                forecastItem.classList.add('predict__forecasts-item');
 
-                    forecastsContainer.appendChild(forecastItem);
-                });
-            }
+                const percentage = parseFloat(forecast.percentage).toFixed(1);
+                const percentageSpan = document.createElement('span');
+                percentageSpan.textContent = `${percentage}%`;
+
+
+                const forecastText = document.createTextNode(` ${forecast.forecast ?? "0-0"}`);
+                forecastItem.appendChild(percentageSpan);
+                forecastItem.appendChild(forecastText);
+
+                forecastsContainer.appendChild(forecastItem);
+            });
         }).catch(error => {
             console.error('Error fetching top forecasts:', error);
         });
@@ -454,7 +456,6 @@
 
                 // console.log(users)
             });
-
     }
     function populateUsersTable(users, currentUserId, matchNumber) {
         resultsTable.innerHTML = '';
@@ -884,6 +885,7 @@
 
     renderUsers = function () {
         console.log('renderUsers вимкнено для тесту');
+        // showTopForecast = true
     }
 
     populateUsersTable = function () {
@@ -894,4 +896,5 @@
         console.log('displayUser вимкнено для тесту');
     }
     showTopForecast = true
+    console.log(showTopForecast)
 })()
