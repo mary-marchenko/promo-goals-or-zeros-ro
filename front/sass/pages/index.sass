@@ -198,6 +198,13 @@ picture
       &-btn
         @media screen and (max-width: 600px)
           bottom: 13px
+      &-item
+        @media screen and (max-width: 600px)
+          &:nth-child(2)
+            margin: 0
+            .gide__list-text
+              width: 180px
+              margin-left: 12px
   .predict
     &__title
       width: 530px
@@ -240,7 +247,8 @@ picture
           @media screen and (max-width: 615px)
             font-size: 24px
         &-info
-          max-width: 285px
+          @media screen and (max-width: 600px)
+            width: 287px
   .drop
     .dropdown
       summary
@@ -248,6 +256,9 @@ picture
           font-size: 12.5px
         @media screen and (max-width: 600px)
           font-size: 12px
+        @media screen and (max-width: 360px)
+          font-size: 10px
+          padding-left: 18px
 //end EN
 
 body
@@ -1499,7 +1510,7 @@ body
     transition: opacity .7s ease
     &-body
       background: url('../img/popups/bg-popup-desk.jpg') no-repeat 50% 50%/contain
-      @media screen and (max-width: 700px)
+      @media screen and (max-width: 715px)
         background: url('../img/popups/bg-popup-mob.jpg') no-repeat 50% 50%/contain
       padding: 100px 50px
       width: 640px
