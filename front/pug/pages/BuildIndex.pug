@@ -5,7 +5,8 @@ button.menu-btn menu
     button.auth-btn auth
     button.btn-predict predict
     button.btn-thenks thanks
-    button.btn-lastPred last predict
+    button.btn-lastPred-1 last predict-1
+    button.btn-lastPred-2 last predict-2
     button.btn-after after 1 game
 .fav-page#goals-or-zeros
     .promo.promoPos
@@ -570,12 +571,12 @@ button.menu-btn menu
                     .predict__forecasts-item #[span 20%] 0-2
             a(href="/login/" role="button" data-translate="loginBtn").predict__btn.btn.unauth-msg.hide Autentificare
             .predict__btn.btn.took-part.hide.predict-btn(role="button" data-translate="playBtn") Fă o predicție
-            .predict__last
+            .predict__last.predict__last-1
                 .predict__last-title
                     .predict__last-img
                         img(src="img/predict/clock.svg" alt="clock")
                     .predict__last-txt(data-translate="lastPredict") Ultima ta predicție
-                .predict__last-info
+                .predict__last-info.predict__last-info-1
                     .predict__last-score
                         .predict__last-team.team1(data-translate="inter") Inter
                         .predict__last-counter
@@ -585,6 +586,25 @@ button.menu-btn menu
                             span.scoreTeam2 0
                         .predict__last-team.team2(data-translate="barcelona") Barcelona
                     .predict__last-goal.hide
+                        .predict__last-text(data-translate="firstGoal") Перший гол:
+                        .predict__last-country(data-translate="inter") inter
+                    .predict__last-result.confirmed(data-translate="confirmed") Confirmată
+                    .predict__last-result.unconfirmed.active(data-translate="unconfirmed") Neconfirmat
+            .predict__last.predict__last-TEST.hide
+                .predict__last-title
+                    .predict__last-img
+                        img(src="img/predict/clock.svg" alt="clock")
+                    .predict__last-txt(data-translate="lastPredict") Ultima ta predicție
+                .predict__last-info.predict__last-info-1
+                    .predict__last-score.hide
+                        .predict__last-team.team1(data-translate="inter") Inter
+                        .predict__last-counter
+                            span.scoreTeam1 0
+                            .predict__last-vs
+                                img(src="img/vs.png" alt="vs")
+                            span.scoreTeam2 0
+                        .predict__last-team.team2(data-translate="barcelona") Barcelona
+                    .predict__last-goal
                         .predict__last-text(data-translate="firstGoal") Перший гол:
                         .predict__last-country(data-translate="inter") inter
                     .predict__last-result.confirmed(data-translate="confirmed") Confirmată

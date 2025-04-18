@@ -930,7 +930,7 @@
     &:after
       background: linear-gradient(180deg, rgba(0, 0, 85, 0) 0%, #005 55%)
       height: 80px
-      bottom: 47px
+      bottom: 2px
     &.predictPos
       margin-top: -80px
     &__title
@@ -942,6 +942,9 @@
       transform: scale(0.75)
       transform-origin: top center
       z-index: 4
+      margin-bottom: -65px
+      &.goalCont
+        margin-bottom: -70px
     &__btn
       z-index: 3
     &__last
@@ -1018,6 +1021,10 @@
         line-height: 16px
       &-btn
         padding: 10px
+  .predict__container-calculations
+    transform: scale(0.8)
+    .predict__forecasts-item
+      white-space: nowrap
 
 @media screen and (max-width: 320px)
   .popups

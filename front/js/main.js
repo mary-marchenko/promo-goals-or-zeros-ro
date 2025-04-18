@@ -848,11 +848,21 @@
         window.location.reload()
     });
 
-    document.querySelectorAll('.btn-lastPred').forEach(button => {
+    document.querySelectorAll('.btn-lastPred-1').forEach(button => {
         button.addEventListener('click', function() {
-            document.querySelectorAll('.predict__last').forEach(element => {
+            document.querySelectorAll('.predict__last-1').forEach(element => {
                 element.classList.toggle('hide');
             });
+            document.querySelector('.predict__last-TEST').add("hide")
+        });
+    });
+
+    document.querySelectorAll('.btn-lastPred-2').forEach(button => {
+        button.addEventListener('click', function() {
+            document.querySelectorAll('.predict__last-TEST').forEach(element => {
+                element.classList.toggle('hide');
+            });
+            document.querySelector('.predict__last-1').add("hide")
         });
     });
 
