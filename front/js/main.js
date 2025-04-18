@@ -12,7 +12,7 @@
     let currentTab = Number(document.querySelector(".predict__tabs-date.active").getAttribute("data-match-number"))
     let currentTabTable = Number(document.querySelector(".table__tabs-date.active").getAttribute("data-match-number"))
     let matchNumber = Number(document.querySelector(".predict__container.active").getAttribute("data-match-number"))
-    let showTopForecast = false
+    let showTopForecast = true
 
     const FIRST_MATCH_DATE = new Date('2025-04-29T22:00:00') // дата матчу
     const SECOND_MATCH_DATE = new Date('2025-04-30T22:00:00') // дата матчу
@@ -430,6 +430,7 @@
         });
     }
     function renderUsers() {
+        console.log('рендер працює')
         request(`/users/${currentTabTable}`)
             .then(data => {
 
@@ -662,8 +663,11 @@
         const isDate4Active = document.querySelector('.predict__tabs-date.date4.active');
 
 
-        if (isScoreTabActive) {
-            if(showTopForecast) topForecast.classList.remove("hide")
+        if (!!isScoreTabActive) {
+            if(showTopForecast) {
+                console.log("score")
+                topForecast.classList.remove("hide")
+            }
 
             if (isDate1Active) {
                 document.querySelector('.predict__container.score-1').classList.add('active');
@@ -674,8 +678,11 @@
             } else if (isDate4Active) {
                 document.querySelector('.predict__container.score-4').classList.add('active');
             }
-        } else if (isGoalTabActive) {
-            if(showTopForecast) topForecast.classList.add("hide")
+        } else if (!!isGoalTabActive) {
+            if(showTopForecast) {
+                console.log("score")
+                topForecast.classList.add("hide")
+            }
             if (isDate1Active) {
                 document.querySelector('.predict__container.goal-1').classList.add('active');
             } else if (isDate2Active) {
@@ -810,10 +817,9 @@
             });
         });
     });
+
     loadTranslations()
         .then(init)
-
-    init()
 
     // TEST
     document.querySelector('.dark-btn').addEventListener('click', () => {
@@ -883,10 +889,7 @@
         console.log('updateTopForecasts вимкнено для тесту');
     }
 
-    renderUsers = function () {
-        console.log('renderUsers вимкнено для тесту');
-        // showTopForecast = true
-    }
+
 
     populateUsersTable = function () {
         console.log('populateUsersTable вимкнено для тесту');
@@ -895,6 +898,14 @@
     displayUser = function () {
         console.log('displayUser вимкнено для тесту');
     }
-    showTopForecast = true
-    console.log(showTopForecast)
+
+    renderUsers = function () {
+        console.log('renderUsers вимкнено для тесту');
+        // showTopForecast = true
+    }
+
+
+
+
+
 })()
